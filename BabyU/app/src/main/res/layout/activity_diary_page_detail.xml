@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Diary.DiaryPage_detail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#A0DFE4"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:title="寶寶成長日記"
+        app:titleTextColor="#645C5C" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="時間"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/textView_date"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/buttonDate"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/textDate"
+            android:src="@drawable/ic_event"
+            android:textColor="#645C5C" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText_remarks"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/edittextbackground"
+        android:gravity="left"
+        android:hint="紀錄寶寶今天的活動吧!!" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_chooseImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:foreground="@drawable/ic_photo" />
+
+
+</RelativeLayout>
+
+
+
+

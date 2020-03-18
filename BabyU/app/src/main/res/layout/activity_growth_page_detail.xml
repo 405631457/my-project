@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Growth.GrowthPage_detail"
+
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#A0DFE4"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:title="成長紀錄"
+        app:titleTextColor="#645C5C" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:format12Hour="yyyy/MM/dd"
+        android:gravity="center_horizontal"
+        android:textColor="#645C5C"
+        android:textSize="25dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textClock"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView_height"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="身高"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText_cm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/textView_height"
+            android:gravity="center"
+            android:hint="公分"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView_cm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/editText_cm"
+            android:gravity="center"
+            android:text="公分"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/textView_weight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView_height"
+            android:gravity="center"
+            android:text="體重"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText_kg"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editText_cm"
+            android:layout_toRightOf="@id/textView_weight"
+            android:gravity="center"
+            android:hint="公克"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView_kg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView_cm"
+            android:layout_toRightOf="@id/editText_kg"
+            android:gravity="center"
+            android:text="公克"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView_weight"
+
+            android:gravity="center"
+            android:text="頭圍"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText_hcm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editText_kg"
+            android:layout_toRightOf="@id/textView_head"
+            android:gravity="center"
+            android:hint="公分"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView_hcm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView_kg"
+            android:layout_toRightOf="@id/editText_hcm"
+            android:gravity="center"
+            android:text="公分"
+            android:textColor="#645C5C"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="刪除紀錄"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

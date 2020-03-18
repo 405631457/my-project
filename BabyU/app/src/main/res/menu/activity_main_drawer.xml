@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_comment"
+            android:title="首頁" />
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/ic_calender"
+            android:title="@string/menu_calender" />
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="寶寶日記" />
+        <item
+            android:id="@+id/nav_visibility"
+            android:icon="@drawable/ic_visibility"
+            android:title="@string/menu_visibility" />
+
+        <item
+            android:id="@+id/nav_LogOut"
+            android:icon="@drawable/ic_logout"
+            android:title="登出" />
+</menu>

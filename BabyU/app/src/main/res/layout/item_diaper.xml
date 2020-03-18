@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F1F1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:background="@drawable/diaper"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_feed" />
+
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/img_feed"
+                android:text="2019/08/18"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#645C5C" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/text_date"
+                android:text="12:30"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#645C5C" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_feed"
+                android:layout_below="@id/textTitle"
+                android:text="尿布狀態"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#645C5C" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTitle"
+                android:layout_toRightOf="@id/textView2"
+                android:text="乾爽"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#645C5C" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDescription"
+                android:layout_toRightOf="@id/img_feed"
+                android:layout_marginTop="5dp"
+                android:text="備註"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#645C5C" />
+
+            <TextView
+                android:id="@+id/textView_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDescription"
+                android:layout_toRightOf="@id/textView3"
+                android:text="今天天氣很好"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#645C5C" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

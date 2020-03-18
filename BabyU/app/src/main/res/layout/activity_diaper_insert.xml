@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diaper.DiaperInsert"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#A0DFE4"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:title="尿布狀態"
+        app:titleTextColor="#645C5C" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:format12Hour="yyyy/MM/dd"
+        android:gravity="center_horizontal"
+        android:textColor="#645C5C"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textClock"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="時間"
+        android:textColor="#645C5C"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textClock"
+        android:layout_toRightOf="@id/textView_date"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/buttonDate"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textClock"
+        android:layout_toRightOf="@id/textDate"
+        android:src="@drawable/ic_event"
+        android:textColor="#645C5C" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textClock"
+        android:layout_toRightOf="@id/buttonDate"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/buttonTime"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textClock"
+        android:layout_toRightOf="@id/textTime"
+        android:src="@drawable/ic_alarm"
+        android:textColor="#645C5C" />
+
+    <TextView
+        android:id="@+id/diaper"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textTime"
+        android:gravity="center"
+        android:text="尿布狀態"
+        android:textColor="#645C5C"
+        android:layout_marginLeft="8dp"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/buttonTime"
+        android:layout_toRightOf="@id/diaper"
+        android:entries="@array/diaper_catgory"
+        android:textAlignment="center">
+
+    </Spinner>
+    <EditText
+        android:id="@+id/editText_remarks"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/diaper"
+        android:background="@drawable/edittextbackground"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:hint="備註"
+        android:gravity="left"
+        android:layout_gravity="center" />
+</RelativeLayout>
+
+
+
+
+
+

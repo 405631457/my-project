@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:background="#F5F1F1"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#FFFFFF"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/cerclebackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/babyoulogo"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="寶寶基本資料"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/wordcolor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_outline"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/wordcolor" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint=""
+                android:textColor="@color/wordcolor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="小名"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/wordcolor" />
+
+            <EditText
+                android:id="@+id/edit_nickname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint=""
+                android:textColor="@color/wordcolor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="生日"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/wordcolor" />
+
+            <EditText
+                android:id="@+id/edit_birthday"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint=""
+                android:textColor="@color/wordcolor"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/buttonDate"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/textDate"
+                android:src="@drawable/ic_event"
+                android:textColor="#645C5C" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="儲存"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/wordcolor"/>
+    </LinearLayout>
+
+
+</LinearLayout>

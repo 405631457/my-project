@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Video">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <Button
+        android:id="@+id/urlbutton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:text="url"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/urlbutton"
+        android:background="@drawable/shape2"
+        android:ems="50"
+        android:inputType="text"
+        android:singleLine="false"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/warnbutton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/urlbutton"
+        android:layout_alignParentLeft="true"
+        android:text="Warning on"
+        android:background="@drawable/shape"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+</RelativeLayout>

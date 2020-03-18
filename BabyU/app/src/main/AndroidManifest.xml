@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.babyu">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Diary.DiaryPage_detail"></activity>
+        <activity android:name=".Diary.DiaryPage" />
+        <activity android:name=".Diary.DiaryInsert" />
+
+        <service
+            android:name=".FirebaseMseeagingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Login.SignUpActivity" />
+        <activity android:name=".DiaryActivity" />
+        <activity android:name=".Sleep.SleepInsert" />
+        <activity android:name=".Growth.GrowthPage_detail" />
+        <activity android:name=".Diaper.DiaperPage_detail" />
+        <activity android:name=".Growth.GrowthInsert" />
+        <activity android:name=".Feed.FeedPage_detail" />
+        <activity android:name=".Diaper.DiaperInsert" />
+        <activity android:name=".Feed.FeedInsert" />
+        <activity android:name=".Diaper.DiaperPage" />
+        <activity android:name=".Growth.GrowthPage" />
+        <activity android:name=".Sleep.SleepPage" />
+        <activity android:name=".Feed.FeedPage" />
+        <activity android:name=".MainActivity1"/>
+        <activity android:name=".calender1"/>
+        <activity android:name=".Video"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReceiver" />
+    </application>
+
+</manifest>
